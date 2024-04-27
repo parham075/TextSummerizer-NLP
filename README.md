@@ -5,9 +5,15 @@ Text Summarization is a crucial and top Natural Language Processing task that in
 
 This project aims to develop an abstractive or extractive text summarization model capable of creating informative and concise summaries from lengthy text documents.
 
+## Usecase:
+The output model from this project can be useful for academic researcher, students, and anybody who doesn't have much time to read large amount of text and looking for a solution to summerize their articles, course slides, etc. 
+
 ## Dataset Overview and Data Preprocessing
 
 This project requires a dataset containing articles or documents with human-generated summaries. Data preprocessing involves tokenizing the text, handling punctuation, and creating input-target pairs for training.
+For this project I used two dataset from Hugging Face:
+- [Samsum](https://huggingface.co/datasets/samsum?row=0)
+- [legal_summarization](https://huggingface.co/datasets/lighteval/legal_summarization?row=0)
 
 ## Queries for Analysis
 
