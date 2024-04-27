@@ -11,7 +11,7 @@ The output model from this project can be useful for academic researcher, studen
 ## Dataset Overview and Data Preprocessing
 
 This project requires a dataset containing articles or documents with human-generated summaries. Data preprocessing involves tokenizing the text, handling punctuation, and creating input-target pairs for training.
-For this project I used two dataset from Hugging Face:
+For this project I used two dataset from `Hugging Face`:
 - [Samsum](https://huggingface.co/datasets/samsum?row=0)
 - [legal_summarization](https://huggingface.co/datasets/lighteval/legal_summarization?row=0)
 
