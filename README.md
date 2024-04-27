@@ -15,7 +15,10 @@ For this project I used two dataset from `Hugging Face`:
 - [legal_summarization](https://huggingface.co/datasets/lighteval/legal_summarization?row=0)
 
 ## Model(s)
-- [pegasus-cnn_dailymail](https://huggingface.co/google/pegasus-cnn_dailymail)
+| Model| Weights|
+| --- | --- |
+|pre-trained model | [pegasus-cnn_dailymail](https://huggingface.co/google/pegasus-cnn_dailymail)|
+
 ## Queries for Analysis
 
 Generate summaries for long articles or documents.
