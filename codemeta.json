@@ -1,0 +1,34 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/CC-BY-NC-SA-4.0",
+    "codeRepository": "https://github.com/parham075/TextSummerizer-NLP",
+    "dateCreated": "2023-04-27",
+    "datePublished": "2023-",
+    "name": "TextSummerizer-NLP",
+    "version": "1.0.0",
+    "developmentStatus": "active",
+    "relatedLink": [
+        ""
+    ],
+    "keywords": [
+        "NLP", "Text Summerizer", "mlflow", "Deep Learning"
+    ],
+    "programmingLanguage": [
+        "Python", "CWL"
+    ],
+    "softwareRequirements": [
+        "container runtime",
+        "cwl runner",
+        "mlflow"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Parham",
+            "familyName": "Membari",
+            "email": "p.membari96@gmail.com"
+        }
+        
+    ]
+}

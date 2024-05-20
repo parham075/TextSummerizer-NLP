@@ -7,10 +7,12 @@ dependencies:
   - ipykernel
   - pip
   - pip:
+    - transformers
     - transformers[sentencepiece]
     - datasets
     - sacrebleu
     - rouge_score
+    - pyYAML
     - py7zr
     - numpy
     - nltk
@@ -20,3 +22,11 @@ dependencies:
     - matplotlib
     - torch
     - torchvision
+    - notebook
+    - ensure
+    - fastapi
+    - uvicorn
+    - Jinja2
+    - boto3
+    - mypy-boto3-s3
+    - python-box
