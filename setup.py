@@ -1,37 +1,23 @@
 import setuptools
 import json
+from io import open
+
+from setuptools import find_packages, setup
 
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-codemeta = open('codemeta.json')
-with open('./codemeta.json', 'r') as f:
-    code_setup = json.load(f)
 
+console_scripts = []
 
-__version__ = code_setup['version']
+console_scripts.append(
+    "{0}={1}.main:main".format(
+        find_packages("src")[0].replace("_", "-"), find_packages("src")[0]
+    )
+)
 
-REPO_NAME = code_setup['name']
-AUTHOR = code_setup['author']
-SRC_REPO = "textSummarizer"
-
-
-
-setuptools.setup(
-    name=SRC_REPO,
-    version=__version__,
-    author=AUTHOR,
-    description="A python package for NLP app",
-    long_description=long_description,
-    long_description_content="text/markdown",
-    url=code_setup['codeRepository'],
-    keywords= code_setup['keywords'],
-    dateCreated = code_setup['dateCreated'],
-    programmingLanguage= code_setup['programmingLanguage'],
-    softwareRequirements = code_setup['softwareRequirements'],
-    project_urls={
-        "Bug Tracker": f"{code_setup['codeRepository']}/issues",
-    },
+setup(
+    entry_points={"console_scripts": console_scripts},
+    packages=find_packages(where="src"),
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
 )

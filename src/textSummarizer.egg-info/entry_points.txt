@@ -1,0 +1,2 @@
+[console_scripts]
+textSummarizer = textSummarizer.main:main
