@@ -1,0 +1,9 @@
+articles/*
+__pycache__/*
+*__pycache__*
+build/*
+dist/*
+notebooks/*
+logs/*
+template.py
+.github/*

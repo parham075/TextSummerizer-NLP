@@ -1,0 +1,10 @@
+articles/*
+__pycache__/*
+*__pycache__*
+build/*
+dist/*
+notebooks/*
+*.png
+*.jpeg
+*.jpg
+*.tif
